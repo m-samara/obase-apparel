@@ -33,6 +33,7 @@
 .description {
     color: #d198a1;
     font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .search_container {
@@ -70,6 +71,10 @@ button {
     border-radius: 100px;
     background: rgb(254, 193, 203);
     background: linear-gradient(90deg, rgba(254, 193, 203, 1) 0%, rgba(197, 136, 146, 1) 100%);
+}
+
+.search_container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -35px 36px -28px inset;
 }
 
 .search_container button:active {
