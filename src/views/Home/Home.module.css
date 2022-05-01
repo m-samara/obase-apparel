@@ -1,0 +1,106 @@
+.home {
+    display: grid;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.responsive_margin {
+    margin: 1.5rem 10%;
+}
+
+.main_img {
+    height: 15rem;
+    width: 100%;
+    background-image: url("/public/fem1-m.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.focused {
+    margin-top: 3rem;
+    word-spacing: 100vw;
+    font-size: 2.3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    color: #323232;
+}
+
+.focused::first-line {
+    color: #bb9e9d;
+    font-weight: 300;
+}
+
+.description {
+    color: #d198a1;
+    font-weight: 400;
+}
+
+.search_container {
+    display: flex;
+    height: 3rem;
+    border-radius: 100px;
+    border: solid 2px rgb(149 125 129 / 43%);
+}
+
+.search_container input,
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.search_container input {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    width: calc(100% - 4rem);
+    color: #c58892;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.search_container input::placeholder {
+    color: #c5889288;
+    font-weight: 700;
+}
+
+.search_container button {
+    font-size: 2rem;
+    width: 4rem;
+    color: white;
+    border-radius: 100px;
+    background: rgb(254, 193, 203);
+    background: linear-gradient(90deg, rgba(254, 193, 203, 1) 0%, rgba(197, 136, 146, 1) 100%);
+}
+
+.search_container button:active {
+    box-shadow: rgb(116 82 113) 3px 3px 6px 0px inset, rgb(163 145 162 / 50%) -3px -3px 6px 1px inset
+}
+
+@media all and (min-width: 600px) {
+    .main_content {
+        align-self: center;
+    }
+
+    .responsive_margin {
+        margin: 1.5rem 25%;
+        text-align: left;
+    }
+
+    .home {
+        min-height: 100vh;
+        grid-template-columns: 60% 1fr;
+        grid-template-rows: 4.5rem 1fr;
+    }
+
+    .main_img {
+        width: auto;
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .focused {
+        font-size: 3rem;
+    }
+}

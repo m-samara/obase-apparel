@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;350;400;500;600;700&display=swap');
+
+.App {
+  min-height: 100vh;
+  background: rgb(255, 253, 254);
+  background: linear-gradient(180deg, rgba(255, 253, 254, 1) 0%, rgba(253, 246, 245, 1) 30%, rgba(253, 239, 239, 1) 100%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+@media all and (min-width: 600px) {
+  .App {
+    background: rgb(253, 243, 243);
+    background: linear-gradient(135deg, rgba(253, 243, 243, 1) 0%, rgba(254, 249, 249, 1) 50%, rgba(253, 245, 244, 1) 100%);
+  }
+}
